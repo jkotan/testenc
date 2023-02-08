@@ -14,7 +14,11 @@
 #
 # MAKE_ENV is the path to find common environment to build project
 #
-MAKE_ENV ?= $(TANGO_DIR)/Libraries/cppserver/common
+ifdef TANGO_ROOT
+   MAKE_ENV = $(TANGO_ROOT)/share/pogo/preferences
+else
+    MAKE_ENV = /usr/share/pogo/preferences
+endif
 
 #=============================================================================
 # PACKAGE_NAME is the name of the library/device/exe you want to build
