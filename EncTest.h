@@ -63,10 +63,8 @@ class EncTest : public TANGO_BASE_CLASS
 
 //	Attribute data members
 public:
-	// Tango::DevVarCharArray argin;
-	// Tango::DevString        w_val;
-        Tango::DevEncoded *attr_myimage_read;
-;
+	Tango::DevEncoded	*attr_myimage_read;
+
 //	Constructors and destructors
 public:
 	/**

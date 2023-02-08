@@ -191,7 +191,7 @@ void EncTest::read_myimage(Tango::Attribute &attr)
 	DEBUG_STREAM << "EncTest::read_myimage(Tango::Attribute &attr) entering... " << endl;
 	/*----- PROTECTED REGION ID(EncTest::read_myimage) ENABLED START -----*/
 	//	Set the attribute value
-	
+
 	// Tango::DevEncoded	*local_myimage_read;
 	// local_myimage_read = new Tango::DevEncoded[1];
 	// local_myimage_read[0].encoded_format = "Hola";
@@ -209,7 +209,7 @@ void EncTest::read_myimage(Tango::Attribute &attr)
 	attr.set_value(attr_myimage_read);
 	attr_myimage_read[0].encoded_data[1] = 0x12;
 	
-	/*----- PROTECTED REGION END -----*/	     //	EncTest::read_myimage
+	/*----- PROTECTED REGION END -----*/	//	EncTest::read_myimage
 }
 
 //--------------------------------------------------------
